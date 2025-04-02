@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élever | Liderazgo, Negocios e Innovación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="top-bar">
+                <a href="#" class="logo">ÉLEVER</a>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#" id="loginBtn">Iniciar Sesión</a></li>
+                    <li><a href="#" id="subscribeBtn">Suscribirse</a></li>
+                </ul>
+            </div>
+            <div class="secondary-nav">
+                <ul class="category-links">
+                    <li><a href="#">Negocios</a></li>
+                    <li><a href="#">Innovación</a></li>
+                    <li><a href="#">Liderazgo</a></li>
+                    <li><a href="#">Dinero</a></li>
+                    <li><a href="#">Tecnología</a></li>
+                    <li><a href="#">Estilo</a></li>
+                    <li><a href="#">Opinión</a></li>
+                </ul>
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar...">
+                    <span class="search-icon">🔍</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="main-article">
+                <img src="https://placehold.co/800x500/0078ff/ffffff" alt="Empresas innovadoras">
+                <div class="article-content">
+                    <h1 class="article-title">Las 10 empresas más innovadoras del año transforman el futuro empresarial</h1>
+                    <p class="article-excerpt">Un análisis profundo de cómo estas compañías están redefiniendo sus industrias y creando nuevos paradigmas de negocio en un contexto de rápida transformación digital.</p>
+                    <div class="article-meta">
+                        <div class="article-meta-avatar">
+                            <img src="https://placehold.co/24x24" alt="María Rodríguez">
+                        </div>
+                        Por María Rodríguez • 1 de Abril, 2025
+                    </div>
+                </div>
+            </div>
+            <div class="side-stories">
+                <div class="side-story" onclick="openArticle('article1')">
+                    <h2 class="side-story-title">El auge de las fintech en Latinoamérica: un mercado en expansión</h2>
+                    <p class="side-story-excerpt">Cómo las nuevas tecnologías financieras están democratizando el acceso a servicios bancarios en la región y creando oportunidades para emprendedores.</p>
+                    <div class="side-story-meta">Por Carlos Méndez • 31 Marzo, 2025</div>
+                </div>
+                <div class="side-story" onclick="openArticle('article2')">
+                    <h2 class="side-story-title">Inteligencia artificial: la revolución silenciosa en la manufactura</h2>
+                    <p class="side-story-excerpt">Las empresas que han implementado IA en sus procesos productivos reportan incrementos de hasta un 35% en eficiencia y reducción de costos operativos.</p>
+                    <div class="side-story-meta">Por Ana González • 30 Marzo, 2025</div>
+                </div>
+                <div class="side-story" onclick="openArticle('article3')">
+                    <h2 class="side-story-title">Los nuevos modelos de liderazgo en la era post-pandemia</h2>
+                    <p class="side-story-excerpt">La flexibilidad y la empatía emergen como valores fundamentales en los líderes empresariales de hoy, redefiniendo las estructuras organizacionales.</p>
+                    <div class="side-story-meta">Por Roberto Sánchez • 29 Marzo, 2025</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trending-tags">
+            <div class="section-header">
+                <h2 class="section-title">Temas Tendencia</h2>
+            </div>
+            <div class="tags-container">
+                <a href="#" class="tag">Inteligencia Artificial</a>
+                <a href="#" class="tag">Startups</a>
+                <a href="#" class="tag">Sostenibilidad</a>
+                <a href="#" class="tag">Economía Digital</a>
+                <a href="#" class="tag">Blockchain</a>
+                <a href="#" class="tag">Liderazgo</a>
+                <a href="#" class="tag">Inversiones</a>
+                <a href="#" class="tag">Transformación Digital</a>
+            </div>
+        </section>
+
+        <section class="featured-content">
+            <div class="section-header">
+                <h2 class="section-title">Artículos Destacados</h2>
+                <a href="#" class="view-all">Ver todos</a>
+            </div>
+            <div class="content-grid">
+                <div class="content-card" onclick="openArticle('article4')">
+                    <div class="card-image">
+                        <img src="https://placehold.co/400x200/0078ff/ffffff" alt="Cambio climático">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">El impacto del cambio climático en las estrategias corporativas</h2>
+                        <p class="card-excerpt">Las grandes corporaciones están adoptando medidas cada vez más ambiciosas para reducir su huella ambiental y cumplir con nuevas regulaciones.</p>
+                        <div class="card-meta">Por Laura Torres • 1 Abril, 2025</div>
+                    </div>
+                </div>
+                <div class="content-card" onclick="openArticle('article5')">
+                    <div class="card-image">
+                        <img src="https://placehold.co/400x200/0078ff/ffffff" alt="Criptomonedas">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Criptomonedas: ¿revolución financiera o burbuja especulativa?</h2>
+                        <p class="card-excerpt">Un análisis del estado actual del mercado cripto y sus perspectivas a futuro según expertos del sector financiero y tecnológico.</p>
+                        <div class="card-meta">Por Javier Morales • 31 Marzo, 2025</div>
+                    </div>
+                </div>
+                <div class="content-card" onclick="openArticle('article6')">
+                    <div class="card-image">
+                        <img src="https://placehold.co/400x200/0078ff/ffffff" alt="Comercio electrónico">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">El auge del comercio electrónico en pequeñas empresas</h2>
+                        <p class="card-excerpt">Cómo los emprendedores están aprovechando las plataformas digitales para expandir sus negocios y conquistar mercados internacionales.</p>
+                        <div class="card-meta">Por Patricia Vega • 30 Marzo, 2025</div>
+                    </div>
+                </div>
+                <div class="content-card" onclick="openArticle('article7')">
+                    <div class="card-image">
+                        <img src="https://placehold.co/400x200/0078ff/ffffff" alt="Jóvenes empresarios">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">Los 30 empresarios menores de 30 que están transformando industrias</h2>
+                        <p class="card-excerpt">Jóvenes emprendedores que con ideas innovadoras están desafiando los modelos de negocio tradicionales y creando nuevas tendencias.</p>
+                        <div class="card-meta">Por Martín López • 29 Marzo, 2025</div>
+                    </div>
+                </div>
+                <div class="content-card" onclick="openArticle('article8')">
+                    <div class="card-image">
+                        <img src="https://placehold.co/400x200/0078ff/ffffff" alt="Economía circular">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="card-title">La economía circular: el futuro de los negocios sostenibles</h2>
+                        <p class="card-excerpt">Empresas que han implementado modelos de negocio basados en la reutilización y el reciclaje, generando valor y reduciendo su impacto ambiental.</p>
+                        <div class="card-meta">Por Elena Martínez • 28 Marzo, 2025</div>
+                    </div>
+                </div>
+                <div class="content-card" onclick="openArticle('article9')">
+                    <div class="card-image">
+                        <img src="https://placehold.co/400x200/0078ff/ffffff" alt="Realidad aumentada">
+                    </div>
+                    <div class="card-content">
+                        <!-- Contenido adicional -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>ÉLEVER</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categorías</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Negocios</a></li>
+                        <li><a href="#">Innovación</a></li>
+                        <li><a href="#">Liderazgo</a></li>
+                        <li><a href="#">Tecnología</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#"><img src="https://placehold.co/36x36" alt="Facebook"></a>
+                        <a href="#"><img src="https://placehold.co/36x36" alt="Twitter"></a>
+                        <a href="#"><img src="https://placehold.co/36x36" alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir las últimas noticias y actualizaciones.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico">
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 ÉLEVER. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top">↑</div>
+
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Iniciar Sesión</h2>
+                <button class="close-modal">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="tab-nav">
+                    <div class="tab active" data-target="login">Iniciar Sesión</div>
+                    <div class="tab" data-target="subscribe">Suscribirse</div>
+                </div>
+                <div id="login" class="tab-content active">
+                    <form>
+                        <div class="form-group">
+                            <label for="login-email">Correo Electrónico</label>
+                            <input type="email" id="login-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Contraseña</label>
+                            <input type="password" id="login-password" required>
+                        </div>
+                        <button type="submit" class="form-submit">Iniciar Sesión</button>
+                    </form>
+                    <div class="form-footer">
+                        ¿No tienes una cuenta? <a href="#" id="subscribeBtn">Suscribirse</a>
+                    </div>
+                </div>
+                <div id="subscribe" class="tab-content">
+                    <form>
+                        <div class="form-group">
+                            <label for="subscribe-email">Correo Electrónico</label>
+                            <input type="email" id="subscribe-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subscribe-password">Contraseña</label>
+                            <input type="password" id="subscribe-password" required>
+                        </div>
+                        <button type="submit" class="form-submit">Suscribirse</button>
+                    </form>
+                    <div class="form-footer">
+                        ¿Ya tienes una cuenta? <a href="#" id="loginBtn">Iniciar Sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
